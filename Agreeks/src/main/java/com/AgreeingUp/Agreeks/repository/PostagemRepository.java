@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import com.AgreeingUp.Agreeks.model.Postagem;
 
 @Repository
-public interface PostagemRepository extends JpaRepository<Postagem, Integer>{
-public List<Postagem>findAllByTituloContainingIgnoreCase (String titulo);
+public interface PostagemRepository extends JpaRepository<Postagem, Integer> {
+	public List<Postagem> findAllByTituloContainingIgnoreCase(String titulo);
 }
